@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>bSecure — Platform Wiki</title>
+<title>NoFikar — Platform Wiki</title>
 <style>
 /* ── THEME VARIABLES ─────────────────────────────────────────────── */
 :root {
@@ -425,7 +425,7 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
   <button class="ham-btn" id="ham-btn" title="Menu">☰</button>
   <a class="logo" href="#">
     <div class="logo-shield">🛡️</div>
-    bSecure
+    NoFikar
   </a>
   <span class="logo-badge">v1.0.0</span>
 
@@ -466,6 +466,7 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
     <a href="#user-app"><span class="sb-icon">📱</span>User App</a>
     <a href="#guard-app"><span class="sb-icon">🛡️</span>Guard App</a>
     <a href="#admin-panel"><span class="sb-icon">🖥️</span>Admin Panel</a>
+    <a href="#vendor-portal"><span class="sb-icon">🏢</span>Vendor Portal</a>
   </div>
   <div class="sb-sec">
     <div class="sb-label">Platform</div>
@@ -492,14 +493,14 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
 <main class="main" id="main-content">
 
 <div class="breadcrumb">
-  <a href="#">bSecure</a><span style="color:var(--bdr)">›</span>
+  <a href="#">NoFikar</a><span style="color:var(--bdr)">›</span>
   <span style="background:linear-gradient(90deg,var(--pri),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700">Platform Wiki</span>
 </div>
 
 <!-- HERO -->
 <div class="hero" id="overview">
   <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Platform Documentation · v1.0.0</div>
-  <h1>bSecure Platform Wiki</h1>
+  <h1>NoFikar Platform Wiki</h1>
   <div class="hero-divider"></div>
   <p class="hero-sub">
     <span class="hl-orange">On-demand security guard</span> booking platform —
@@ -508,13 +509,13 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
     <span class="hl-pink">ops</span>, and stakeholders.
   </p>
   <div class="hero-stats">
-    <div class="hero-stat"><span class="hero-stat-val">4</span><span class="hero-stat-lbl">Apps</span></div>
+    <div class="hero-stat"><span class="hero-stat-val">5</span><span class="hero-stat-lbl">Apps</span></div>
     <div class="hero-stat-sep"></div>
-    <div class="hero-stat"><span class="hero-stat-val">19</span><span class="hero-stat-lbl">Sections</span></div>
+    <div class="hero-stat"><span class="hero-stat-val">21</span><span class="hero-stat-lbl">Sections</span></div>
     <div class="hero-stat-sep"></div>
     <div class="hero-stat"><span class="hero-stat-val">INR ₹</span><span class="hero-stat-lbl">Currency</span></div>
     <div class="hero-stat-sep"></div>
-    <div class="hero-stat"><span class="hero-stat-val">v1.1.0</span><span class="hero-stat-lbl">Version</span></div>
+    <div class="hero-stat"><span class="hero-stat-val">v1.2.0</span><span class="hero-stat-lbl">Version</span></div>
   </div>
   <div class="hero-tags">
     <span class="hero-tag">Django 5 + DRF</span>
@@ -526,6 +527,7 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
     <span class="hero-tag">INR ₹ Currency</span>
     <span class="hero-tag">In-App Chat</span>
     <span class="hero-tag">Reviews & Ratings</span>
+    <span class="hero-tag">Vendor / Agency Portal</span>
   </div>
 </div>
 
@@ -542,6 +544,7 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
     <li><a href="#user-app">User App</a></li>
     <li><a href="#guard-app">Guard App</a></li>
     <li><a href="#admin-panel">Admin Panel</a></li>
+    <li><a href="#vendor-portal">Vendor / Agency Portal</a></li>
     <li><a href="#payments">Payments &amp; Wallet</a></li>
     <li><a href="#chat">In-App Chat</a></li>
     <li><a href="#reviews">Reviews &amp; Ratings</a></li>
@@ -561,7 +564,7 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
 <div class="section" data-id="components">
   <div class="sh" onclick="toggle(this)">
     <div class="si" style="background:var(--pri-l)">🧩</div>
-    <div><div class="st">Platform Components</div><div class="ss">Four apps powering bSecure</div></div>
+    <div><div class="st">Platform Components</div><div class="ss">Four apps powering NoFikar</div></div>
     <span class="stog">▼</span>
   </div>
   <div class="sb">
@@ -578,7 +581,7 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
           <tr><td><strong>User App</strong></td><td>Flutter (Dart)</td><td>End users</td><td>—</td><td><span class="dot dg"></span>Running</td></tr>
           <tr><td><strong>Guard App</strong></td><td>Flutter (Dart)</td><td>Guards</td><td>—</td><td><span class="dot dg"></span>Running</td></tr>
           <tr><td><strong>Admin Panel</strong></td><td>React + Vite</td><td>Operators</td><td>5173</td><td><span class="dot dg"></span>Running</td></tr>
-          <tr><td><strong>Backend API</strong></td><td>Django 5 + Daphne</td><td>All apps</td><td>8001</td><td><span class="dot dg"></span>Running</td></tr>
+          <tr><td><strong>Backend API</strong></td><td>Django 5 + Daphne</td><td>All apps</td><td>8000</td><td><span class="dot dg"></span>Running</td></tr>
           <tr><td><strong>PostgreSQL</strong></td><td>PostGIS 16 (Docker)</td><td>Primary DB</td><td>5433</td><td><span class="dot dg"></span>Running</td></tr>
           <tr><td><strong>Redis</strong></td><td>Redis 7 (Docker)</td><td>Cache/Queue/WS</td><td>6380</td><td><span class="dot dg"></span>Running</td></tr>
           <tr><td><strong>MinIO</strong></td><td>S3-compatible (Docker)</td><td>File storage</td><td>9000/9001</td><td><span class="dot dg"></span>Running</td></tr>
@@ -660,11 +663,11 @@ pre code{background:none;border:none;padding:0;color:var(--pre-txt);
     <div class="panel p-info"><span class="pi">ℹ️</span><div class="pc"><div class="pt">Prerequisites</div><p>Python 3.12, Node.js 18+, Docker &amp; Docker Compose, Homebrew (macOS), GDAL (brew install gdal)</p></div></div>
     <h3>Start All Services</h3>
     <div class="steps">
-      <div class="step"><div class="snum">1</div><div class="sc"><div class="stit">Start Docker Infrastructure</div><pre><code>cd bsecure-backend
+      <div class="step"><div class="snum">1</div><div class="sc"><div class="stit">Start Docker Infrastructure</div><pre><code>cd nofikar-backend
 docker compose up -d db redis minio</code></pre></div></div>
-      <div class="step"><div class="snum">2</div><div class="sc"><div class="stit">Start Backend API — Terminal 1</div><pre><code>cd bsecure-backend && source venv/bin/activate
+      <div class="step"><div class="snum">2</div><div class="sc"><div class="stit">Start Backend API — Terminal 1</div><pre><code>cd nofikar-backend && source venv/bin/activate
 DJANGO_SETTINGS_MODULE=config.settings.local \
-  daphne -b 0.0.0.0 -p 8001 config.asgi:application</code></pre></div></div>
+  daphne -b 0.0.0.0 -p 8000 config.asgi:application</code></pre></div></div>
       <div class="step"><div class="snum">3</div><div class="sc"><div class="stit">Start Celery Worker — Terminal 2</div><pre><code>DJANGO_SETTINGS_MODULE=config.settings.local \
   celery -A celery_app worker -Q high_priority,default,low_priority -l info</code></pre></div></div>
       <div class="step"><div class="snum">4</div><div class="sc"><div class="stit">Start Celery Beat — Terminal 3</div><pre><code>DJANGO_SETTINGS_MODULE=config.settings.local \
@@ -679,12 +682,12 @@ DJANGO_SETTINGS_MODULE=config.settings.local \
       <table>
         <thead><tr><th>Service</th><th>URL</th><th>Credentials</th></tr></thead>
         <tbody>
-          <tr><td><strong>Admin Panel</strong></td><td><a href="http://localhost:5173" target="_blank">localhost:5173</a></td><td>admin@bsecure.in / admin123</td></tr>
+          <tr><td><strong>Admin Panel</strong></td><td><a href="http://localhost:5173" target="_blank">localhost:5173</a></td><td>admin@nofikar.in / admin123</td></tr>
           <tr><td><strong>User App</strong></td><td><a href="http://localhost:8081" target="_blank">localhost:8081</a></td><td>Any phone + OTP bypass pin 123456</td></tr>
           <tr><td><strong>Guard App</strong></td><td><a href="http://localhost:8082" target="_blank">localhost:8082</a></td><td>Any phone + OTP bypass pin 123456</td></tr>
-          <tr><td><strong>API Swagger Docs</strong></td><td><a href="http://localhost:8001/api/docs/" target="_blank">localhost:8001/api/docs/</a></td><td>—</td></tr>
-          <tr><td><strong>Django Admin</strong></td><td><a href="http://localhost:8001/django-admin/" target="_blank">localhost:8001/django-admin/</a></td><td>admin@bsecure.in / admin123</td></tr>
-          <tr><td><strong>MinIO Console</strong></td><td><a href="http://localhost:9001" target="_blank">localhost:9001</a></td><td>bsecure_dev / dev_password_123</td></tr>
+          <tr><td><strong>API Swagger Docs</strong></td><td><a href="http://localhost:8000/api/docs/" target="_blank">localhost:8000/api/docs/</a></td><td>—</td></tr>
+          <tr><td><strong>Django Admin</strong></td><td><a href="http://localhost:8000/django-admin/" target="_blank">localhost:8000/django-admin/</a></td><td>admin@nofikar.in / admin123</td></tr>
+          <tr><td><strong>MinIO Console</strong></td><td><a href="http://localhost:9001" target="_blank">localhost:9001</a></td><td>nofikar_dev / dev_password_123</td></tr>
         </tbody>
       </table>
     </div>
@@ -722,9 +725,9 @@ DJANGO_SETTINGS_MODULE=config.settings.local \
       </table>
     </div>
     <h3>Switch Environments</h3>
-    <pre><code>cp bsecure-backend/.env.local bsecure-backend/.env       # local (OTP bypass, plain PG — no PostGIS)
-cp bsecure-backend/.env.development bsecure-backend/.env  # dev (real SMS, PostGIS)
-cp bsecure-backend/.env.production bsecure-backend/.env   # production</code></pre>
+    <pre><code>cp nofikar-backend/.env.local nofikar-backend/.env       # local (OTP bypass, plain PG — no PostGIS)
+cp nofikar-backend/.env.development nofikar-backend/.env  # dev (real SMS, PostGIS)
+cp nofikar-backend/.env.production nofikar-backend/.env   # production</code></pre>
     <div class="panel p-info"><span class="pi">ℹ️</span><div class="pc"><div class="pt">local.py — No PostGIS Required</div><p><code>config.settings.local</code> extends <code>development.py</code> and switches to the plain <code>django.db.backends.postgresql</code> engine, removing <code>django.contrib.gis</code>. This means you can run the backend on macOS without installing GDAL or PostGIS. Guard proximity queries are disabled in local mode.</p></div></div>
     <div class="panel p-warn"><span class="pi">⚠️</span><div class="pc"><div class="pt">Never commit .env to Git</div><p>Only <code>.env.example</code> is committed. All other <code>.env.*</code> files are git-ignored.</p></div></div>
   </div>
@@ -821,7 +824,7 @@ class BookingViewSet(viewsets.ModelViewSet):
     </div>
     <h3>Django Admin Login</h3>
     <p>Custom <code>EmailAuthBackend</code> in <code>utils/backends.py</code> allows email login (in addition to phone number).</p>
-    <pre><code>Email:    admin@bsecure.in
+    <pre><code>Email:    admin@nofikar.in
 Password: admin123</code></pre>
   </div>
 </div>
@@ -832,11 +835,11 @@ Password: admin123</code></pre>
 <div class="section" id="api-endpoints" data-id="api endpoints">
   <div class="sh" onclick="toggle(this)">
     <div class="si" style="background:var(--acc-l)">🔌</div>
-    <div><div class="st">API Endpoints</div><div class="ss">All REST + WebSocket endpoints — Base URL: http://localhost:8001</div></div>
+    <div><div class="st">API Endpoints</div><div class="ss">All REST + WebSocket endpoints — Base URL: http://localhost:8000</div></div>
     <span class="stog">▼</span>
   </div>
   <div class="sb">
-    <div class="panel p-info"><span class="pi">📖</span><div class="pc"><div class="pt">Interactive Swagger Docs</div><p>Full API explorer at <a href="http://localhost:8001/api/docs/" target="_blank">http://localhost:8001/api/docs/</a></p></div></div>
+    <div class="panel p-info"><span class="pi">📖</span><div class="pc"><div class="pt">Interactive Swagger Docs</div><p>Full API explorer at <a href="http://localhost:8000/api/docs/" target="_blank">http://localhost:8000/api/docs/</a></p></div></div>
     <h3>Authentication</h3>
     <div class="ep"><div class="eph"><span class="mth m-post">POST</span><span class="eppath">/api/auth/send-otp/</span><span class="epdesc">Send OTP — no auth required</span></div></div>
     <div class="ep"><div class="eph"><span class="mth m-post">POST</span><span class="eppath">/api/auth/verify-otp/</span><span class="epdesc">Verify OTP → JWT tokens</span></div></div>
@@ -912,7 +915,7 @@ Password: admin123</code></pre>
     <span class="stog">▼</span>
   </div>
   <div class="sb">
-    <div class="panel p-info"><span class="pi">ℹ️</span><div class="pc"><div class="pt">Stack changed — React Native → Flutter</div><p>The User App has been rewritten in <strong>Flutter (Dart)</strong>. Source is at <code>bsecure/flutter_userapp/</code>. Run with <code>flutter run</code>.</p></div></div>
+    <div class="panel p-info"><span class="pi">ℹ️</span><div class="pc"><div class="pt">Stack changed — React Native → Flutter</div><p>The User App has been rewritten in <strong>Flutter (Dart)</strong>. Source is at <code>nofikar/flutter_userapp/</code>. Run with <code>flutter run</code>.</p></div></div>
     <div class="tw">
       <table>
         <thead><tr><th>Screen</th><th>Route / Feature</th><th>Description</th></tr></thead>
@@ -958,7 +961,7 @@ flutter run                # physical device or simulator</code></pre>
     <span class="stog">▼</span>
   </div>
   <div class="sb">
-    <div class="panel p-info"><span class="pi">ℹ️</span><div class="pc"><div class="pt">Stack changed — React Native → Flutter</div><p>The Guard App has been rewritten in <strong>Flutter (Dart)</strong>. Source is at <code>bsecure/flutter_guardapp/</code>. Run with <code>flutter run</code>.</p></div></div>
+    <div class="panel p-info"><span class="pi">ℹ️</span><div class="pc"><div class="pt">Stack changed — React Native → Flutter</div><p>The Guard App has been rewritten in <strong>Flutter (Dart)</strong>. Source is at <code>nofikar/flutter_guardapp/</code>. Run with <code>flutter run</code>.</p></div></div>
     <div class="tw">
       <table>
         <thead><tr><th>Screen</th><th>Feature</th><th>Description</th></tr></thead>
@@ -997,7 +1000,7 @@ flutter run                # physical device or simulator</code></pre>
     <span class="stog">▼</span>
   </div>
   <div class="sb">
-    <div class="panel p-suc"><span class="pi">🔑</span><div class="pc"><div class="pt">Login Credentials</div><p>Email: <strong>admin@bsecure.in</strong> &nbsp;|&nbsp; Password: <strong>admin123</strong> &nbsp;|&nbsp; URL: <a href="http://localhost:5173/login" target="_blank">localhost:5173/login</a></p></div></div>
+    <div class="panel p-suc"><span class="pi">🔑</span><div class="pc"><div class="pt">Login Credentials</div><p>Email: <strong>admin@nofikar.in</strong> &nbsp;|&nbsp; Password: <strong>admin123</strong> &nbsp;|&nbsp; URL: <a href="http://localhost:5173/login" target="_blank">localhost:5173/login</a></p></div></div>
     <div class="tw">
       <table>
         <thead><tr><th>Page</th><th>Route</th><th>Description</th></tr></thead>
@@ -1082,7 +1085,7 @@ flutter run                # physical device or simulator</code></pre>
       </table>
     </div>
     <h3>WebSocket</h3>
-    <pre><code>ws://localhost:8001/ws/chat/{booking_id}/?token=&lt;jwt&gt;
+    <pre><code>ws://localhost:8000/ws/chat/{booking_id}/?token=&lt;jwt&gt;
 
 // Send message
 { "type": "send_message", "content": "Hello!", "message_type": "TEXT" }
@@ -1434,12 +1437,12 @@ docker compose logs -f api celery_worker           # View logs</code></pre>
 <div style="margin-top:56px;padding-top:24px;border-top:1px solid var(--bdr);
   display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
   <div style="color:var(--txt2)">
-    <strong>bSecure Platform Wiki</strong>
+    <strong>NoFikar Platform Wiki</strong>
     <span style="color:var(--txt3);font-size:12px;margin-left:10px">v1.1.0 · August 2026</span>
   </div>
   <div style="display:flex;gap:16px;font-size:13px">
-    <a href="http://localhost:8001/api/docs/" target="_blank">API Docs</a>
-    <a href="http://localhost:8001/django-admin/" target="_blank">Django Admin</a>
+    <a href="http://localhost:8000/api/docs/" target="_blank">API Docs</a>
+    <a href="http://localhost:8000/django-admin/" target="_blank">Django Admin</a>
     <a href="http://localhost:5173" target="_blank">Admin Panel</a>
   </div>
 </div>
@@ -1469,13 +1472,13 @@ if (hamBtn) {
 
 // ── THEME ─────────────────────────────────────────────────────────
 const btn = document.getElementById('theme-btn');
-let dark = localStorage.getItem('bsecure-theme') === 'dark';
+let dark = localStorage.getItem('nofikar-theme') === 'dark';
 function applyTheme() {
   html.setAttribute('data-theme', dark ? 'dark' : 'light');
   btn.textContent = dark ? '☀️' : '🌙';
 }
 applyTheme();
-btn.addEventListener('click', () => { dark = !dark; localStorage.setItem('bsecure-theme', dark ? 'dark' : 'light'); applyTheme(); });
+btn.addEventListener('click', () => { dark = !dark; localStorage.setItem('nofikar-theme', dark ? 'dark' : 'light'); applyTheme(); });
 
 // ── SECTION TOGGLE ────────────────────────────────────────────────
 function toggle(header) {
