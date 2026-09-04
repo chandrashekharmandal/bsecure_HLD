@@ -1364,14 +1364,16 @@ MSG91_TEMPLATE_ID=your-otp-template-id</code></pre>
 <div class="section" id="costs" data-id="cost report aws infrastructure monthly">
   <div class="sh" onclick="toggle(this)">
     <div class="si" style="background:var(--acc-l)">📊</div>
-    <div><div class="st">Infrastructure Cost Report</div><div class="ss">AWS ap-south-1 Mumbai — MVP scale ~500 users / 100 guards</div></div>
+    <div><div class="st">Infrastructure Cost Report</div><div class="ss">AWS ap-south-1 Mumbai — MVP scale ~500 users / 100 guards — incl. dev & AI costs</div></div>
     <span class="stog">▼</span>
   </div>
   <div class="sb">
     <div class="cards">
-      <div class="card"><div class="ci">🚀</div><div class="ct">MVP Launch</div><div class="cv">₹19K–26K</div><div class="cd">~$230–310 / month</div></div>
+      <div class="card"><div class="ci">🚀</div><div class="ct">MVP Launch</div><div class="cv">₹19K–26K</div><div class="cd">~$230–310 / month (infra only)</div></div>
       <div class="card"><div class="ci">📈</div><div class="ct">Growth Phase</div><div class="cv">₹31K–43K</div><div class="cd">500–2,000 users / month</div></div>
       <div class="card"><div class="ci">⚡</div><div class="ct">Scale Phase</div><div class="cv">₹58K–91K</div><div class="cd">2,000–10,000 users / month</div></div>
+      <div class="card"><div class="ci">🤖</div><div class="ct">AI Subscriptions</div><div class="cv">₹7.5K–10K</div><div class="cd">~$91–120 / month (dev-tool + in-app)</div></div>
+      <div class="card"><div class="ci">👩‍💻</div><div class="ct">Dev Cost (One-Time)</div><div class="cv">₹13L–61L</div><div class="cd">~$15,800–74,000 (in-house vs. agency)</div></div>
     </div>
     <div class="tw">
       <table>
@@ -1389,10 +1391,36 @@ MSG91_TEMPLATE_ID=your-otp-template-id</code></pre>
           <tr><td><strong>Sentry + SendGrid</strong></td><td>Error + email</td><td>$0</td><td>₹0 free tier</td></tr>
           <tr><td><strong>IDfy KYC</strong></td><td>Guard verification</td><td>~$13–23</td><td>~₹1,080–1,900</td></tr>
           <tr><td><strong>Apple Developer</strong></td><td>iOS App Store</td><td>$8.25</td><td>~₹685</td></tr>
-          <tr style="font-weight:800"><td><strong>TOTAL MVP</strong></td><td></td><td><strong>~$230–310</strong></td><td><strong>~₹19,000–25,700</strong></td></tr>
+          <tr><td><strong>AI Subscriptions</strong></td><td>Copilot/Cursor (4 seats) + in-app AI placeholder</td><td>~$91–120</td><td>~₹7,550–9,960</td></tr>
+          <tr style="font-weight:800"><td><strong>TOTAL MVP (incl. AI)</strong></td><td></td><td><strong>~$327–545</strong></td><td><strong>~₹27,150–45,260</strong></td></tr>
         </tbody>
       </table>
     </div>
+
+    <h3>Development (Labor) Cost — One-Time</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Hiring Model</th><th>Team</th><th>Duration</th><th>Total (USD)</th><th>Total (INR)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Indian In-House Team</strong></td><td>1 Backend + 1 Frontend + 1 Mobile (FT), 0.5 QA + 0.5 PM</td><td>~5 months</td><td>~$15,800–20,600</td><td>~₹13,10,000–17,10,000</td></tr>
+          <tr><td><strong>Freelance / Agency (India-based)</strong></td><td>Same roles, hourly billed</td><td>~5 months</td><td>~$44,800–74,000</td><td>~₹37,20,000–61,40,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.85rem;opacity:.75;margin-top:.5rem">One-time cost to build the MVP — not part of the recurring monthly infra/AI totals above. See <code>docs/nofikar-cost-report.md</code> (Section 10) for full role-by-role breakdown and assumptions.</p>
+
+    <h3>AI Subscriptions</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Category</th><th>Tool / Use</th><th>USD/mo</th><th>INR/mo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Dev-Tool AI</strong></td><td>GitHub Copilot Business / Cursor Pro (4 seats)</td><td>~$76–80</td><td>~₹6,300–6,640</td></tr>
+          <tr><td><strong>In-App AI (placeholder)</strong></td><td>Support chatbot — GPT-4o-mini / Claude Haiku class (not yet built)</td><td>~$15–40</td><td>~₹1,250–3,320</td></tr>
+          <tr style="font-weight:800"><td><strong>TOTAL AI Subscriptions</strong></td><td></td><td><strong>~$91–120</strong></td><td><strong>~₹7,550–9,960</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <h3>Cost Optimization Tips</h3>
     <ul>
       <li>Use <strong>Reserved Instances</strong> for EC2 and RDS — saves 30–40% vs on-demand</li>
@@ -1400,6 +1428,8 @@ MSG91_TEMPLATE_ID=your-otp-template-id</code></pre>
       <li>MSG91 over Twilio for India OTPs — ~10x cheaper per SMS</li>
       <li>Google Maps $200/mo credit covers all MVP usage</li>
       <li>S3 Intelligent Tiering for old documents — saves ~40% storage cost</li>
+      <li>Prefer in-house hiring over freelance/agency for long-term dev cost savings (~3x cheaper at MVP scope)</li>
+      <li>Free-tier AI coding assistants (e.g. Copilot Individual) can defer the $76–80/mo team cost pre-funding</li>
     </ul>
   </div>
 </div>
